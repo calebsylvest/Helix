@@ -15,6 +15,12 @@
 	$(document).ready(function (){
 	
 		// your functions go here
+		$('#email-button').click(function() {
+			$('#email-button').addClass("active");
+			$('#email-button[type=text]').removeAttr('placeholder');
+			//$('#email-button[type=text]').attr('placeholder','Enter name');
+		});
+
 	
 	});
 	

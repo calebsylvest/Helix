@@ -69,10 +69,17 @@ p a {
 	margin: 0 0 2em;
 }
 
-.button {
+.button,
+.email {
+	width: 80px;
 	display: inline-block;
+	color: #f4f2ca;
+	text-align: center;
 	background-color: #d8492e;
+	/*background-color: #f35b40;*/
 	padding: .9em 1.8em;
+	border: none;
+	cursor: pointer;
 	border-radius: 4px;
 	transition: all .2s linear;
 }
@@ -80,8 +87,31 @@ p a {
 	color: #f4f2ca;
 }
 
+::-webkit-input-placeholder {
+   color: #f4f2ca;
+}
+
+.email:hover {
+	background-color: #d0432a;
+}
+.email.active {
+	width: 200px;
+	outline: none;
+	color: #efaa9d;
+	text-align: left;
+	cursor: inherit;
+}
+
+.call-to-action {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
 #mc_embed_signup {
 	/*display: none;*/
+	position: relative;
 }
 
 
