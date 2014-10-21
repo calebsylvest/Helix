@@ -1,0 +1,595 @@
+/* Font imports
+-------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.chromeframe {position: absolute; top: 0;}
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+
+body {font: 87.5% 'OpenSansLight', 'Myriad Pro', Helvetica, Arial, sans-serif;}
+
+/* we like off-black for text */
+body, select, input, textarea {color: #818181;}
+
+a {color: #F5F5F2; text-decoration: none; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; transition: all 0.3s ease-in;}
+a:hover {color: #f05232; border-color: #f05232;}
+
+/* Accessible focus treatment */
+a:hover, a:active, a:visited, a:focus, a:link {outline: none;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fdd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color: #a9a9a9; }
+textarea:-moz-placeholder { color: #a9a9a9; }
+
+/* kill the blue glow of input fields */
+input:focus,
+textarea:focus {
+	box-shadow: 0;
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal; letter-spacing: .01em;}
+
+h2 {color: #5a5a55; line-height: 100%; margin-bottom: .5em;}
+
+h3 {margin-bottom: 1em;}
+
+h4 {color: #5a5a55;}
+
+h5, h6 {font-family: 'OpenSansBold', 'Myriad Pro', Helvetica, Arial, sans-serif; font-size: .8em; color: #62625c; text-transform: uppercase; margin-bottom: .7em;}
+
+.giga {font-size: 4em;}
+.mega {font-size: 3.5em;}
+.alpha {font-size: 2.9em;}
+.beta {font-size: 2em;}
+.gamma {font-size: 1.5em;}
+.delta {}
+.epsilon {}
+.zeta {}
+
+p {margin-bottom: 0.9em;}
+
+
+/* Global styles!
+-------------------------------------------------------------------------------*/
+
+/* ----- LAYOUT & POSITIONING -----*/
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #fbfbfb;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.story {
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	width: 80%;
+	max-width: 1080px;
+	min-width: 700px;
+	margin: 0 auto;
+}
+
+.small-container {
+	width: 60%;
+	max-width: 800px;
+	min-width: 700px;
+	margin: 0 auto;
+}
+
+.three-quarter {width: 75%;}
+.sixty {width: 60%;}
+.half {width: 50%;}
+.third {width: 30%;}
+.quarter {width: 22%;}
+.fifth {width: 18%;}
+
+/* ----- STYLES ----- */
+
+/* Header Section */
+a.sign-up-button {
+	color: #f5f5f2;
+	font-size: .7em;
+	font-family: 'OpenSansBold', 'Myriad Pro', Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	background-color: #d8492e;
+	padding: 1.3em 3em;
+	display: inline-block;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	
+	position: fixed;
+	top: 1em;
+	right: 1em;
+	z-index: 999;
+}
+a.sign-up-button:hover {
+	background-color: #00ccff;
+}
+
+/* Hero Section */
+.hero {
+	width: 100%;
+	height: 95%;
+	min-height: 630px;
+	background-color: #f05133;
+	position: relative;
+}
+
+a.brand {
+	width: 10em;
+	height: 10em;
+	display: block;
+	margin: 5em auto 2em;
+	text-indent: -9999px;
+	background: #46463a url(../images/helix-cms-logo.png) no-repeat center center;
+	-webkit-border-radius: 999em;
+	-moz-border-radius: 999em;
+	border-radius: 999em;
+}
+a.brand:hover {
+	background-color: #606051;
+}
+
+.welcome-title {
+	text-align: center;
+	color: #fbfbfb;
+}
+
+.exclamation {
+	width: 100%;
+	height: auto;
+	color: #fbfbfb;
+	background-color: #46463a;
+	padding: 3em 0;
+	position: absolute;
+	bottom: 0;
+}
+
+/* need to remove bottom margin to keep margin balanced in this section */
+.exclamation h3 {margin-bottom: 0;}
+
+a.page-down {
+	width: 3em;
+	height: 3em;
+	min-height: 58px;
+	min-width: 58px;
+	position: absolute;
+	bottom: -1.5em;
+	left: 48%;
+	background: #ccccc6 url(../images/arrow-down-icon.png) no-repeat center center;
+	text-indent: -9999px;
+	-webkit-border-radius: 999em;
+	-moz-border-radius: 999em;
+	border-radius: 999em;
+}
+a.page-down:hover {
+	background-color: #00ccff;
+}
+
+/* Intro Section */
+.intro {
+	margin: 7em 0;
+}
+
+.intro-media {
+	background-color: #fff;
+	padding: 1.5em 3em;
+}
+
+.intro-video {
+	background-color: #00ccff;
+	width: 100%;
+	height: 450px;
+	
+	display: none; /* this is a temp addition until we have a video */
+}
+
+/* Content-Editing Section */
+.feature-content-editing {
+	background: url(../images/bg-content-editing.png) repeat-y center top;
+}
+
+.content-editing-text,
+.content-editing-frame {
+	padding: 4em 3em 5em 3em;
+}
+.content-editing-text {padding-left: 0;}
+.content-editing-frame {
+	padding-right: 0;
+	min-height: 450px;
+}
+
+/* Image-Editing Section */
+.image-editing-text,
+.image-editing-frame {
+	padding: 4em 3em 5em 3em;
+}
+.image-editing-text {padding-right: 0;}
+.image-editing-frame {padding-left: 0;}
+
+.feature-image-editing .container {
+	border-bottom: 2px solid #edeef0;
+}
+
+/* Helix Powered Section */
+.feature-helix-powered .small-container {
+	padding: 5em 0;
+	position: relative;
+}
+
+.feature-helix-powered .computer-tag {
+	position: absolute;
+	background: url(../images/dot-line.png) no-repeat left center;
+	padding: 0 0 0 3em;
+}
+
+.feature-helix-powered .tag-your-website {
+	top: 19.5em;
+	left: -6em;
+	padding: 0 3em 0 0;
+	background-position: right center;
+}
+
+.feature-helix-powered .tag-user-menu {
+	top: 11.75em;
+	right: -5em;
+}
+
+.feature-helix-powered .tag-image-bank {
+	top: 22em;
+	right: -5em;
+}
+
+.feature-helix-powered h6 {
+	margin: 0;
+}
+
+.feature-helix-powered h2 {
+	margin: .7em 0;
+	color: #f05133;
+}
+
+.feature-helix-powered h4 {
+	margin-bottom: .8em;
+}
+
+/* Simple Smart Solution Section */
+.feature-solution {
+	background-color: #f5f5f2;
+	position: relative;
+}
+
+.feature-solution-box {
+	background-color: #fff;
+	padding: 5em;
+}
+
+.feature-solution li.feature-item {
+	border-bottom: 1px solid #f5f5f2;
+	padding: 3em 0;
+}
+.feature-solution li.feature-item:nth-child(1) {padding-top: 0;}
+.feature-solution li.feature-item:nth-child(3) {border-bottom: none; padding-bottom: 0;}
+
+.feature-solution h3 {
+	color: #f05133;
+}
+
+.large-icon {
+	width: 137px;
+	height: 137px;
+	-webkit-border-radius: 999em;
+	-moz-border-radius: 999em;
+	border-radius: 999em;
+}
+
+.install-icon {
+	background: #70cad1 url(../images/install-icon.png) no-repeat center center;
+}
+
+.flexible-icon {
+	background: #70cad1 url(../images/flexible-icon.png) no-repeat center center;
+}
+
+.lightweight-icon {
+	background: #454539 url(../images/lightweight-icon.png) no-repeat center center;
+}
+
+/* Sign-Up Section */
+.sign-up {
+	background-color: #f05133;
+	padding: 7em 0;
+}
+
+.sign-up h2 {
+	color: #fbfbfb;
+}
+
+.mc_embed_signup {
+	margin: 0 auto;
+	width: 55%;
+}
+
+#mc-embedded-subscribe-form {
+	position: relative;
+}
+
+.mc-field-group {
+	background-color: #c04129;
+	padding: .5em;
+	-webkit-border-radius: 1.2em;
+	-moz-border-radius: 1.2em;
+	border-radius: 1.2em;
+}
+
+input.mce-EMAIL {
+	width: 100%;
+	padding: 1.2em 5.4em;
+	border: 0;
+	background: #fff url(../images/mail-icon.png) no-repeat 1em center;
+	font-family: 'OpenSansLight', 'Myriad Pro', Helvetica, Arial, sans-serif;
+	-webkit-border-radius: .7em;
+	-moz-border-radius: .7em;
+	border-radius: .7em;
+}
+
+input.mc-embedded-subscribe {
+	background-color: #46463a;
+	padding: 1.3em 2em;
+	border: 0;
+	color: #fbfbfb;
+	font-size: .8em;
+	font-family: 'OpenSansBold', 'Myriad Pro', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+	-webkit-border-radius: .7em;
+	-moz-border-radius: .7em;
+	border-radius: .7em;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	
+	position: absolute;
+	right: .9em;
+	top: .9em;
+}
+input.mc-embedded-subscribe:hover {
+	background-color: #00ccff;
+}
+
+/* Links Section */
+.links {
+	background-color: #454539;
+	color: #f5f5f2;
+}
+
+.links h5 {
+	color: #f5f5f2;
+}
+
+.links .made-by,
+.links .social-links {
+	padding: 4em;
+	position: relative;
+}
+.links .made-by {padding-left: 0;}
+.links .social-links {padding-right: 0; border-left: 1px solid #59594e;}
+
+.links .social-links ul {
+	position: absolute;
+	right: 0;
+	top: 4em;
+}
+
+.links .social-links ul li:nth-child(1) {margin-bottom: .7em;}
+
+/* Footer Section */
+.footer {
+	background-color: #fff;
+	padding: 1.2em 0;
+}
+
+.footer small {
+	float: right;
+	padding-top: 1.1em;
+}
+
+/* ----- REUSABLE CLASSES ----- */
+
+.left {float: left;}
+.right {float: right;}
+
+.inside {padding: 2em;}
+.side-padding {padding: 0 5em;}
+
+.last {margin-right: 0;}
+
+.text-center {text-align: center;}
+
+.link-underline {border-bottom: 1px dotted #F5F5F2;}
+
+/* Icon Blocks */
+.icon-block {
+	height: 3em;
+	width: 3em;
+	min-height: 58px;
+	min-width: 58px;
+	margin: -6.5em auto 3.5em;
+	background-color: #f05133;
+	-webkit-border-radius: 999em;
+	-moz-border-radius: 999em;
+	border-radius: 999em;
+}
+
+.icon-link {
+	display: inline-block;
+	margin: 0;
+	text-indent: -9999px;
+}
+
+.check-icon {
+	background: #f05133 url(../images/check-icon.png) no-repeat center center;
+}
+
+.helix-icon {
+	background: #f05133 url(../images/helix-cms-icon.png) no-repeat center center;
+}
+a.helix-icon:hover {
+	background-color: #00ccff;
+}
+
+.edit-icon {
+	background: #f05133 url(../images/edit-icon.png) no-repeat center center;
+	margin: -1.5em auto 0;
+}
+
+a.we-are-interstellar-icon {
+	background: #f05133 url(../images/we-are-interstellar-logo-icon.png) no-repeat center center;
+	width: 112px;
+	height: 112px;
+	position: absolute;
+	top: 4em;
+	right: 4em;
+}
+a.we-are-interstellar-icon:hover {
+	background-color: #00ccff;
+}
+
+a.facebook-icon,
+a.twitter-icon {
+	background: transparent url(../images/facebook-icon.png) no-repeat center center;
+	border: 5px solid #f5f5f2;
+	width: 3.5em;
+	height: 3.5em;
+}
+
+a.twitter-icon {
+	background: transparent url(../images/twitter-icon.png) no-repeat center center;
+}
+a.facebook-icon:hover,
+a.twitter-icon:hover {
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.feature-item > div{display: inline-block; vertical-align: middle;}
+.bubble-feature-text{width:70%;} 
+.feature-item-ul div:nth-child(1){padding-right: 1em;}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+	
+		
+}
+
+@media screen and (min-width: 768px) {
+	
+	
+}
+
+@media screen and (min-width: 1024px) {
+	
+	body {font-size: 100%}
+	
+	input.mce-EMAIL {
+	padding: 1.2em 4.9em;
+}
+	
+}
+
+@media screen and (min-width: 1280px) {
+	
+	body {font-size: 115%}
+	
+	input.mce-EMAIL {
+	padding: 1.2em 4.4em;
+}
+	
+}
+
+@media screen and (max-height: 768px) {
+
+	a.brand {margin-top: 3em;}
+	
+}
+
+@media screen and (min-height: 900px) {
+
+	a.brand {margin-top: 13em;}
+	
+}
+
+@media screen and (min-height: 1280px) {
+
+	a.brand {margin-top: 15em;}
+	
+}
+
+@media screen and (min-height: 1400px) {
+
+	a.brand {margin-top: 17em;}
+	
+}
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
