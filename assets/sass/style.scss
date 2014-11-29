@@ -1,0 +1,28 @@
+/* Import Partials!
+-------------------------------------------------------------------------------*/
+
+@import "compass/css3";
+
+// browser reset
+@import "partials/_normalize";
+
+// modules
+@import "modules/_vars";
+
+//structure
+@import "vendor/_grid";
+@import "partials/_global";
+
+//@import "partials/_stuff";
+@import "partials/_type";
+@import "partials/_hero";
+@import "partials/_sections";
+
+
+body {
+	background-color: $body-bg;
+}
+
+#sign-up {
+	background-color: $primary-color;	
+}

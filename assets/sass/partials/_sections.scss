@@ -1,0 +1,49 @@
+/*
+  * 
+  * Sections
+  *
+  */
+
+.feature-section {
+	margin: 5em 0;
+}
+
+.section-title {
+	color: $red-color;
+	text-align: center;
+	font-size: 2.4em;
+}
+
+.callout {
+	font-size: 1.3em;
+	color: #464646;
+	text-align: center;
+	margin: 0 auto 2em;
+	max-width: 27em;
+}
+
+.section-icon {
+	width: 40px;
+	margin: 0 auto;
+	display: block;
+}
+
+// Simple Smart Solution section
+#simple-smart-solution {
+	background-color: #f5f5f2;
+
+	.content-card {
+		background-color: #fff;
+		margin-top: -2em;
+	}
+}
+
+#sign-up {
+	padding: 4em 0;
+	text-align: center;
+}
+
+.site-footer {
+	background-color: #d8492e;
+	overflow: hidden;
+}
