@@ -1723,6 +1723,24 @@ abbr {
 .content-card {
   background-color: #fff;
   margin-top: -2em;
+  padding: 0 4em 3em;
+}
+.content-card .section-title {
+  margin-bottom: 2em;
+}
+
+.content-card-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.content-card-group li {
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+.content-card-group li:nth-child(2) .big-icon {
+  float: right;
+  margin: 0 0 0 4em;
 }
 
 .big-icon {
@@ -1731,14 +1749,20 @@ abbr {
   height: 130px;
   display: block;
   float: left;
+  margin-right: 4em;
+  position: relative;
   -moz-border-radius: 999px;
   -webkit-border-radius: 999px;
   border-radius: 999px;
 }
-
-.content-card-group {
-  margin-bottom: 2em;
-  overflow: hidden;
+.big-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 #sign-up {

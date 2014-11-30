@@ -52,6 +52,27 @@
 .content-card {
 	background-color: #fff;
 	margin-top: -2em;
+	padding: 0 4em 3em;
+
+	.section-title {
+		margin-bottom: 2em;
+	}
+}
+
+.content-card-group {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin-bottom: 2em;
+		overflow: hidden;
+
+		&:nth-child(2) .big-icon {
+			float: right;
+			margin: 0 0 0 4em;
+		}
+	}
 }
 
 .big-icon {
@@ -60,12 +81,16 @@
 	height: 130px;
 	display: block;
 	float: left;
+	margin-right: 4em;
+	position: relative;
 	@include border-radius(999px);
-}
 
-.content-card-group {
-	margin-bottom: 2em;
-	overflow: hidden;
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translateX(-50%) translateY(-50%));
+	}
 }
 
 #sign-up {
