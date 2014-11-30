@@ -5,7 +5,7 @@
   */
 
 .feature-section {
-	margin: 5em 0;
+	margin: 8em 0;
 }
 
 .section-title {
@@ -47,11 +47,25 @@
 // Simple Smart Solution section
 #simple-smart-solution {
 	background-color: #f5f5f2;
+}
 
-	.content-card {
-		background-color: #fff;
-		margin-top: -2em;
-	}
+.content-card {
+	background-color: #fff;
+	margin-top: -2em;
+}
+
+.big-icon {
+	background-color: #70cad1;
+	width: 130px;
+	height: 130px;
+	display: block;
+	float: left;
+	@include border-radius(999px);
+}
+
+.content-card-group {
+	margin-bottom: 2em;
+	overflow: hidden;
 }
 
 #sign-up {
@@ -62,13 +76,19 @@
 .site-footer {
 	background-color: #d8492e;
 	overflow: hidden;
+	padding-top: 4em;
+
+	.footer-widget  {
+		margin-bottom: 2em;
+	}
 
 	.wai-logo {
-		width: 130px;
+		max-width: 130px;
 	}
 
 	p {
 		color: $yellow-color;
+		font-size: .9em;
 	}
 
 	h4 {
@@ -76,4 +96,31 @@
 		font-size: 1em;
 		font-weight: 900;
 	}
+
+	a {
+		color: $yellow-color;
+	}
+
+	.copyright {
+		text-align: center;
+		color: darken(#d8492e, 10%);
+		margin: 2em 0;
+		font-size: 1.2em;
+		font-weight: bolder;
+	}
+}
+
+.social-icon {
+	margin: 0 .3em .5em;
+	display: block;
+	float: right;
+
+	&:hover {
+		opacity: .8;
+	}
+
+	img {
+		width: 50px;
+	}
+
 }
