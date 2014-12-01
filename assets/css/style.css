@@ -1680,6 +1680,9 @@ abbr {
 .feature-section {
   margin: 8em 0;
 }
+.feature-section .feature-content {
+  margin-bottom: 1em;
+}
 
 .section-title {
   color: #f05133;
