@@ -23,6 +23,7 @@
 
 	<link rel="shortcut icon" href="assets/img/favicon.ico" />
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/animate.css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	
 	<script src="assets/js/libs/modernizr-2.7.1.dev.js"></script>
@@ -89,7 +90,7 @@
 				<img class="section-icon" src="assets/img/icon-build.svg" alt="A new way to build with Helix">
 
 				<h2 class="section-title">A new way to build</h2>
-				<h3 class="callout">Managing a website is complex. Popular CMS platforms–like WordPress, Drupal, and Expression Engine–offer great features and extensions, but at the cost of ease-of-use, simplicity, and cost.</h3>
+				<h3 class="callout">Managing a website is complex. Popular CMS platforms–like WordPress, Drupal, and Expression Engine–offer great features and extensions, but at the expense of ease-of-use, simplicity, and cost.</h3>
 
 			</div>
 
@@ -136,7 +137,23 @@
 				<h2 class="section-title">WYSIWYG</h2>
 				<h3 class="callout">But with a good connotation. Traditional content management systems create a disconnect between the editor and what people see. Helix removes the disconnect.</h3>
 
-				<img style="margin:3em auto 0; display: block;" src="assets/img/test.png" alt="A new way to build with Helix">
+				<!--<img style="margin:3em auto 0; display: block;" src="assets/img/test.png" alt="A new way to build with Helix">-->
+
+				<div class="example-editor">
+
+					<p>Edit and <span class="example-highlight">
+					<span class="wow fadeInUp">
+					<span class="example-tooltip">
+
+						<a class="tooltip-button bold-button">Bold<img class="tooltip-icon" src="assets/img/icon-bold.svg" alt="Bold button"></a>
+						<a class="tooltip-button italic-button">Italics<img class="tooltip-icon" src="assets/img/icon-italicize.svg" alt="Italic button"></a>
+						<a class="tooltip-button underline-button">Underline<img class="tooltip-icon" src="assets/img/icon-underline.svg" alt="Underline button"></a>
+					</span>
+					<i class="arrow-down"></i>
+					</span>
+					style content from the front-end</span>, because some things in life should be simple!</p>
+
+				</div><!-- /example-editor -->
 
 			</div>
 
@@ -309,6 +326,11 @@
 <script>window.jQuery || document.write("<script src='assets/js/libs/jquery-1.11.0.min.js'>\x3C/script>")</script>
 
 <script src="assets/js/functions.js"></script>
+
+<script src="assets/js/libs/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

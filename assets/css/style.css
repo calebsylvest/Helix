@@ -1306,13 +1306,13 @@ body, select, input, textarea {
 }
 
 ::-moz-selection {
-  background: #f05133;
+  background: #70cad1;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #f05133;
+  background: #70cad1;
   color: #fff;
   text-shadow: none;
 }
@@ -1690,7 +1690,7 @@ abbr {
   font-size: 2.4em;
 }
 
-.callout {
+.callout, .example-editor p {
   font-size: 1.3em;
   color: #464646;
   text-align: center;
@@ -1846,6 +1846,106 @@ abbr {
 }
 .social-icon img {
   width: 50px;
+}
+
+.example-editor {
+  text-align: center;
+  margin: 9em 0 3em;
+}
+.example-editor .example-highlight {
+  background-color: #70cad1;
+  position: relative;
+  display: inline;
+}
+
+.tooltip-tail {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+  /*width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #f00;*/
+}
+
+.arrow-down {
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #363636;
+  left: 50%;
+  top: -23px;
+  transform: translateX(-50%);
+}
+
+.example-tooltip {
+  width: 150px;
+  height: 50px;
+  background-color: #363636;
+  color: #898989;
+  display: block;
+  position: absolute;
+  top: -2.9em;
+  left: 50%;
+  overflow: hidden;
+  z-index: 1;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.example-tooltip::after {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+}
+.example-tooltip .tooltip-button {
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  float: left;
+  cursor: pointer;
+}
+.example-tooltip .tooltip-button:hover {
+  background-color: #70cad1;
+}
+.example-tooltip .tooltip-button:hover img {
+  opacity: .8;
+}
+.example-tooltip .tooltip-button.active {
+  background-color: #70cad1;
+}
+.example-tooltip .tooltip-button.active img {
+  opacity: 1;
+}
+.example-tooltip .tooltip-button img {
+  display: block;
+  width: 23px;
+  margin: 0 auto;
+  position: relative;
+  top: -13px;
+  opacity: .5;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 body {
