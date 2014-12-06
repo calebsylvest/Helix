@@ -5,9 +5,9 @@
 	$(document).ready(function (){
 	
 		// listen for click of email signup button
-		$('#email-button').click(function() {
-			$('#email-button').addClass("active");
-			$('#mc-embedded-subscribe').addClass("show");
+		$('.email-signup-button').click(function() {
+			$('.email-signup-button').addClass("active");
+			$('.email-signup-submit').addClass("show");
 			$(this).attr('placeholder','Email Address...');
 		});
 

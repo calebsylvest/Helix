@@ -1588,8 +1588,7 @@ abbr {
   margin: 2em 0;
 }
 
-.button,
-.email {
+.email-signup-button {
   font-size: 13px;
   width: 130px;
   display: inline-block;
@@ -1629,7 +1628,7 @@ abbr {
   cursor: inherit;
 }
 
-#mc-embedded-subscribe {
+.email-signup-submit {
   width: 35px;
   height: 35px;
   border: none;
@@ -1643,12 +1642,10 @@ abbr {
   transition: all .2s linear;
   display: none;
 }
-
-#mc-embedded-subscribe:hover {
+.email-signup-submit:hover {
   opacity: .33;
 }
-
-#mc-embedded-subscribe.show {
+.email-signup-submit.show {
   display: inline-block;
   background-size: 33px;
 }

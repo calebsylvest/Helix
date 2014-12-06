@@ -46,8 +46,7 @@
 }
 
 // email button
-.button,
-.email {
+.email-signup-button {
 	font-size: 13px;
 	width: 130px;
 	display: inline-block;
@@ -85,7 +84,7 @@
 	cursor: inherit;
 }
 
-#mc-embedded-subscribe {
+.email-signup-submit {
 	width: 35px;
 	height: 35px;
 	border: none;
@@ -99,15 +98,19 @@
 	transition: all .2s linear;
 
 	display: none;
-}
-#mc-embedded-subscribe:hover {
-	opacity: .33;
+
+	&:hover {
+		opacity: .33;
+	}
+	
+	// show the submit button when input is clicked
+	&.show {
+		display: inline-block;
+		background-size: 33px;
+	}
 }
 
-#mc-embedded-subscribe.show {
-	display: inline-block;
-	background-size: 33px;
-}
+
 
 #mc_embed_signup {
 	position: relative;
