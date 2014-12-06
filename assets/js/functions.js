@@ -11,11 +11,7 @@
 			$(this).attr('placeholder','Email Address...');
 		});
 
-		/*$('.bold-button').click(function() {
-			$(this).toggleClass("active");
-			$('.example-highlight').addClass("bold");			
-		});*/
-
+		// faux tooltip menu
 		$('.bold-button').click(function() {
 			$('.bold-button').toggleClass("active");
 			$('.example-highlight').toggleClass("bold");			

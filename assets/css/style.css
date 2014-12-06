@@ -1772,6 +1772,10 @@ abbr {
     margin-right: 0 0 0 4em;
   }
 }
+.content-card-group li:nth-child(3) img {
+  width: 59px;
+  left: 55%;
+}
 
 .big-icon {
   background-color: #70cad1;
@@ -1791,6 +1795,7 @@ abbr {
   }
 }
 .big-icon img {
+  width: 45px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1851,6 +1856,7 @@ abbr {
 .example-editor {
   text-align: center;
   margin: 9em 0 3em;
+  position: relative;
 }
 .example-editor p {
   margin-top: 1em;
@@ -1876,25 +1882,8 @@ abbr {
   width: 20px;
   height: 20px;
   background-color: aqua;
-  /*width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  
-  border-top: 20px solid #f00;*/
 }
 
-/*.arrow-down {
-	width: 0;
-	position: absolute;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid #363636;
-	left: 50%;
-	top: -23px;
-	transform: translateX(-50%);
-}*/
 .example-tooltip {
   width: 150px;
   height: 50px;
@@ -1946,14 +1935,6 @@ abbr {
   position: relative;
   top: -13px;
   opacity: .5;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.underline {
-  text-decoration: underline;
 }
 
 .example-tooltip-2 {
@@ -2022,6 +2003,36 @@ abbr {
 
 .bold {
   font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.try-it-callout {
+  max-width: 6em;
+  position: absolute;
+  left: 75%;
+  top: -2.3em;
+}
+@media screen and (min-width: 600px) {
+  .try-it-callout {
+    left: 65%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .try-it-callout {
+    left: 70%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .try-it-callout {
+    left: 65%;
+  }
 }
 
 body {
