@@ -17,8 +17,8 @@ body {
 body, select, input, textarea {color: $body-font-color;}
 
 // Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301)
-::-moz-selection{background: $blue-color; color: #fff; text-shadow: none;}
-::selection {background: $blue-color,; color: #fff; text-shadow: none;} 
+::-moz-selection{background: $blue-color; color: #444; text-shadow: none;}
+::selection {background: $blue-color; color: #444; text-shadow: none;} 
 
 ins {background-color: $primary-color; color: #000; text-decoration: none;}
 mark {background-color: $primary-color; color: #000; font-style: italic; font-weight: bold;}

@@ -185,6 +185,7 @@
 
 	p {
 		@extend .callout;
+		margin-top: 1em;
 	}
 
 	.example-highlight {
@@ -192,7 +193,8 @@
 		position: relative;
 		display: inline;
 
-		
+		&::-moz-selection{background-color: transparent;  color: #555; text-shadow: none;}
+		&::selection {background-color: transparent; color: #555; text-shadow: none;} 
 	}
 }
 
@@ -209,7 +211,7 @@
 	border-top: 20px solid #f00;*/
 }
 
-.arrow-down {
+/*.arrow-down {
 	width: 0;
 	position: absolute;
 	height: 0;
@@ -219,7 +221,7 @@
 	left: 50%;
 	top: -23px;
 	transform: translateX(-50%);
-}
+}*/
 
 .example-tooltip {
 	width: 150px;
@@ -277,9 +279,7 @@
 	}
 }
 
-.bold {
-	font-weight: bold;
-}
+
 
 .italic {
 	font-style: italic;
@@ -287,4 +287,88 @@
 
 .underline {
 	text-decoration: underline;
+}
+
+
+
+
+
+
+
+.example-tooltip-2 {
+	width: 150px;
+	height: 50px;
+	color: #898989;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	//overflow: hidden;
+	z-index: 1;
+	//@include border-radius(6px);
+
+	&::after {
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-color: aqua;
+	}
+
+	.tooltip-button {
+		width: 50px;
+		height: 50px;
+		//display: inline-block;
+		text-indent: -9999px;
+		float: left;
+		cursor: pointer;
+		background-color: #363636;
+
+		&.bold-button {
+			@include border-radius(6px 0 0 6px);
+		}
+		&.underline-button {
+			@include border-radius(0 6px 6px 0);
+		}
+
+		&:hover {
+			//background-color: $blue-color;
+
+			img {
+				opacity: .8;
+			}
+		}
+
+		&.active {
+			background-color: $blue-color;
+
+			img {
+				opacity: 1;
+			}
+		}
+
+		img {
+			display: block;
+			width: 23px;
+			margin: 0 auto;
+			position: relative;
+			top: -2px;
+			opacity: .5;
+		}
+	}
+}
+
+.arrow-down-2 {
+	width: 0;
+	position: absolute;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #363636;
+	left: 50%;
+	bottom: -10px;
+	z-index: -5;
+	transform: translateX(-50%);
+}
+
+.bold {
+	font-weight: bold;
 }
