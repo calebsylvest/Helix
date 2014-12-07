@@ -18,11 +18,4 @@
 @import "partials/_hero";
 @import "partials/_sections";
 
-
-body {
-	background-color: $body-bg;
-}
-
-#sign-up {
-	background-color: $primary-color;	
-}
+@import "vendor/_animate";
